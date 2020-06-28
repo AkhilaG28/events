@@ -1,167 +1,279 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <head>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<title>Dance Show 1</title>
-</head>
+	<style type="text/css">
+		.show_title {
+			color: fuchsia;
+			font-weight: bolder;
+			font-size: 48px;
+		}
+		.bottom_button {
+			position: fixed;
+			left: 2%;
+			right: 2%;
+			bottom: 0;
+		}
+	</style>
+	
 <body>
 
-	<div class="conatiner-fluid bg-light">
+	<div class="container-fluid">
 
-		<!-- Carousel -->
-		<div class="row mx-2">
-			<div class="col">
-				<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  					<div class="carousel-inner">
-   	 					<div class="carousel-item active">
-        					<img src="..." class="d-block w-100" alt="...">
-    					</div>
-    					<div class="carousel-item">
-  							<img src="..." class="d-block w-100" alt="...">
-    					</div>
-    					<div class="carousel-item">
-      						<img src="..." class="d-block w-100" alt="...">
-    					</div>
-    					<div class="carousel-item">
-      						<img src="..." class="d-block w-100" alt="...">
-   						</div>
-   						<div class="carousel-item">
-    						<img src="..." class="d-block w-100" alt="...">
-    					</div>
-    					<div class="carousel-item">
-      						<img src="..." class="d-block w-100" alt="...">
-    					</div>
-   						<div class="carousel-item">
-      						<img src="..." class="d-block w-100" alt="...">
-    					</div>
-  					</div>
+		<!-- Show Heading -->
+		<div class="row mt-4">
+			<div class="col-6 offset-3">
+				<div class="card w-100" style="height: 150px">
+					<img src="resources/ds1img1.jpg" class="card-img h-100" alt="...">
+					<div class="card-body card-img-overlay mt-5">
+						<div class="card-text h1 text-center show_title">
+							 SHOW
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- Badges -->
-		<div class="row mx-2">
-			<div class="col">
-				<span class="badge badge-dark">Dance Shows</span>
-				<span class="badge badge-dark">Online Streaming Events</span>
-			</div>
-		</div>
-		<hr>
+		<!-- Cards -->
+		<div class="row">
 
-		<!-- More Info -->
-		<div class="row mx-2">
-			<div class="col">
-				<div class="accordion" id="accordionExample">
-  					<div class="card border-0">
-    					<div class="card-header" id="headingOne">
-      						<h2 class="mb-0">
-        						<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-         							<div class="h5">More Information</div>
-        						</button>
-      						</h2>
-    					</div>
-
-    					<div id="collapseOne" class="collapse bg-white" aria-labelledby="headingOne" data-parent="#accordionExample">
-      						<div class="card-body">
-        						<div>1 hr</div>
-								<div>English, Hindi</div>
-								<div>18+</div>
-								<div>Online Streaming</div>
-      						</div>
-    					</div>
-  					</div>
+			<!-- More Info -->
+			<div class="col-3 offset-3 my-5">
+				<div class="card w-100" style="height: 250px">
+					<img src="resources/ds1img2.jpg" class="card-img h-100" alt="...">
+					<div class="card-body card-img-overlay mt-5">
+						<div class="card-text bg-warning h5 mt-5" data-toggle="modal" data-target="#exampleModal1" data-whatever="@mdo">
+							<img src="https://static.thenounproject.com/png/291344-200.png" style="height: 50px"> More Information
+							<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  								<div class="modal-dialog">
+   						 			<div class="modal-content">
+      									<div class="modal-header bg-info text-white">
+       										<h5 class="modal-title" id="exampleModalLabel1">More Information</h5>
+        									<button type="button" class="close" data-dismiss="modal1" aria-label="Close">
+          										<span aria-hidden="true">&times;</span>
+       										</button>
+      									</div>
+      									<div class="modal-body">
+      										<div><img src="resources/ci2.png" class="img-fluid mr-2" style="height: 25px">1 hr</div>
+							  				<div><img src="resources/ci3.png" class="img-fluid mr-2" style="height: 25px">English, Hindi</div>
+							  				<div><img src="resources/ci4.png" class="img-fluid mr-2" style="height: 25px">14+</div>
+							 				<div><img src="resources/ci5.png" class="img-fluid mr-2" style="height: 25px">Online Streaming</div>
+      									</div>
+      									<div class="modal-footer">
+        									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      									</div>
+    								</div>
+  								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
-		<hr>
+			</div>		
 
-		<!-- NOTE -->
-		<div class="row mx-2">
-			<div class="col bg-warning">
-				<div class="h5 py-3">NOTE
-					<ol class="h6">
-						<li>
-							The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-						</li>
-						<li>
-							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-						</li>
-						<li>
-							Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature.
-						</li>
-					</ol>
+			<!-- NOTE -->
+			<div class="col-3 my-5">
+				<div class="card w-100" style="height: 250px">
+					<img src="resources/ds1img3.jpg" class="card-img h-100" alt="...">
+					<div class="card-body card-img-overlay mt-5">
+						<div class="card-text bg-warning h5 mt-5" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">
+							<img src="https://static.thenounproject.com/png/1603763-200.png" style="height: 50px"> NOTE
+							<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+  								<div class="modal-dialog">
+   						 			<div class="modal-content">
+      									<div class="modal-header bg-info text-white">
+       										<h5 class="modal-title" id="exampleModalLabel2">NOTE</h5>
+        									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          										<span aria-hidden="true">&times;</span>
+       										</button>
+      									</div>
+      									<div class="modal-body">
+      										<ol class="h6">
+												<li>
+													The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+												</li>
+												<li>
+													There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+												</li>
+												<li>
+													Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature.
+												</li>
+											</ol>
+      									</div>
+      									<div class="modal-footer">
+        									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      									</div>
+    								</div>
+  								</div>
+							</div>
+						</div>
+					</div>
 				</div>
+			</div>	
+
+			<!-- About -->
+			<div class="col-3 offset-3">
+				<div class="card w-100" style="height: 250px">
+					<img src="resources/ds1img4.jpg" class="card-img h-100" alt="...">
+					<div class="card-body card-img-overlay mt-5">
+						<div class="card-text bg-warning h5 mt-5" data-toggle="modal" data-target="#exampleModal3" data-whatever="@mdo">
+							<img src="https://static.thenounproject.com/png/3131405-200.png" style="height: 50px"> About
+							<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+  								<div class="modal-dialog">
+   						 			<div class="modal-content">
+      									<div class="modal-header bg-info text-white">
+       										<h5 class="modal-title" id="exampleModalLabel3">About</h5>
+        									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          										<span aria-hidden="true">&times;</span>
+       										</button>
+      									</div>
+      									<div class="modal-body h6">
+      										On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish.
+      									</div>
+      									<div class="modal-footer">
+        									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      									</div>
+    								</div>
+  								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+			</div>
+
+			<!-- Terms & Conditions -->
+			<div class="col-3">
+				<div class="card w-100" style="height: 250px">
+					<img src="resources/ds1img5.jpg" class="card-img h-100" alt="...">
+					<div class="card-body card-img-overlay mt-5">
+						<div class="card-text bg-warning h5 mt-5" data-toggle="modal" data-target="#exampleModal4" data-whatever="@mdo">
+							<img src="https://static.thenounproject.com/png/3382682-200.png" style="height: 50px"> Terms & Conditions
+							<div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+  								<div class="modal-dialog modal-dialog-scrollable">
+   						 			<div class="modal-content">
+      									<div class="modal-header bg-info text-white">
+       										<h5 class="modal-title" id="exampleModalLabel4">Terms & Conditions</h5>
+        									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          										<span aria-hidden="true">&times;</span>
+       										</button>
+      									</div>
+      									<div class="modal-body">
+        									<ul class="h6">
+												<li>
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+												</li>
+												<li>
+													Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+												</li>
+												<li>
+													Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+												</li>
+												<li>
+													But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+												</li>
+												<li>
+													At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+												</li>
+												<li>
+													Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+												</li>
+												<li>
+													Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+												</li>
+												<li>
+													Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+												</li>
+												<li>
+													But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+												</li>
+												<li>
+													At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+												</li>
+											</ul>
+      									</div>
+      									<div class="modal-footer">
+        									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      									</div>
+    								</div>
+  								</div>
+							</div>
+						</div>
+					</div>
+					</div>
 			</div>
 		</div>
-		<hr>
-
-		<!-- About -->
-		<div class="row mx-2">
-			<div class="col">
-				<div class="h5">
-					About
-				</div>
-				<div>
-					On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish.
-				</div>
-			</div>
-		</div>
-		<hr>
-
-		<!-- Terms & Conditions -->
-		<div class="row mx-2">
-			<div class="col">
-				<div class="h5">Terms & Conditions</div>
-				<ul class="h6">
-					<li>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
-					</li>
-					<li>
-						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-					</li>
-					<li>
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
-					</li>
-					<li>
-						But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
-					</li>
-					<li>
-						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
-					</li>
-					<li>
-						Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-					</li>
-					<li>
-						Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
-					</li>
-					<li>
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
-					</li>
-					<li>
-						But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
-					</li>
-					<li>
-						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
-					</li>
-				</ul>
-			</div>
-		</div>
-		<hr>
-
-		<!-- Bottom Button -->
-		<div class="row mx-2">
-			<div class="col-12">
-				<div>
-					200 onwards<span class="float-right"><button class="book btn btn-primary rounded">Book Now</button></span>
-				</div>
-			</div>
-		</div>
-
 	</div>
 
 
+	<!-- Bottom Button -->
+	<div class="row mx-2">
+		<div class="col-12">
+			<div class="bottom_button">
+				<div class="float-left amt h5 text-info">
+					200
+				</div>
+				<div class="float-right">
+					<button class="book btn btn-primary rounded" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Book Now</button>
+				</div>	
+			</div>
+					
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  				<div class="modal-dialog">
+   					<div class="modal-content">
+      					<div class="modal-header bg-info text-white">
+       						<h5 class="modal-title h4" id="exampleModalLabel">Billing</h5>
+        					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          						<span aria-hidden="true">&times;</span>
+       						</button>
+      					</div>
+      					<div class="modal-body h6">
+        					<form name="bill_form">
+          						<div class="form-group">
+            						<label for="recipient-name" class="col-form-label">Name:</label>
+            						<input type="text" class="form-control" id="recipient-name">
+          						</div>
+          						<div class="form-group">
+            						<label for="recipient-email" class="col-form-label">Email:</label>
+            						<input type="email" class="form-control" id="recipient-email">
+          						</div>
+          						<div class="form-group">
+            						<label for="recipient-mobile" class="col-form-label">Mobile:</label>
+            						<input type="number" class="form-control" id="recipient-mobile">
+       							</div>
+       							<div class="form-group">
+           							<label for="recipient-people" class="col-form-label">Number of people:</label>
+            						<input type="number" class="form-control" id="recipient-people">
+          						</div>
+        					</form>
+      					</div>
+      					<div class="modal-footer">
+        					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        					<button type="button" class="btn btn-primary" id="pay">Pay</button>
+   						</div>
+    				</div>
+  				</div>
+			</div>			
+		</div>
+	</div>
+
+	<!-- Countdown Timer -->
+	<div class="container" style="width: 500px">
+		<div class="row ml-4 text-center mt-5 p-3">
+		<div id="day" class="col-2 purple-gradient bg-dark p-3  text-light mr-1" style="height: 80px;font-size: large; font-weight:bold ;">NA <br></div>
+		<div id="hour" class="col-2 bg-dark p-3 text-light mr-1"style="height: 80px;font-size: large; font-weight:bold ;">NA</div>
+		<div id="minute" class="col-2 bg-dark p-3 text-light mr-1"style="height: 80px;font-size: large; font-weight:bold ;">NA</div>
+        <div id="second" class="col-2 bg-dark p-3 text-light mr-1"style="height: 80px;font-size: large; font-weight:bold ;">NA</div>
+        <div  class="col-2 bg-light p-3 text-light mr-1"></div>
+        <div  class="col-2 bg-warning  text-light mr-1 " style="height: 30px;">Days</div>
+		<div  class="col-2 bg-warning  text-light mr-1" style="height: 30px;">Hours</div>
+		<div  class="col-2 bg-warning  text-light mr-1" style="height: 30px;">Min</div>
+        <div  class="col-2 bg-warning  text-light mr-1 text-center" style="height: 30px;">Sec</div>   
+		</div>
+	</div>
+	<!-- Script Files -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="book.js"></script>
+	 
 </body>
 </html>
